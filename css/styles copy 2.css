@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
 
 :root {
-  --color-white: #FF00CC;
-  --color-darkblue: #000000;
-  --color-darkblue-alpha: #000000;
-  --color-green: #CCFF00;
+  --color-white: #346675;
+  --color-darkblue: #ffffff;
+  --color-darkblue-alpha: #ffffff;
+  --color-green: #d4dee2;
 }
 
 *,

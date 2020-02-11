@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
 :root {
-  --color-white: #FF00CC;
-  --color-darkblue: #000000;
-  --color-darkblue-alpha: #000000;
-  --color-green: #CCFF00;
+  --color-white: #f3f3f3;
+  --color-darkblue: #f3f3f3;
+  --color-darkblue-alpha: rgba(88, 88, 119, 0.8);
+  --color-green: rgba(64, 64, 87, 0.8);
 }
 
 *,
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -34,17 +34,37 @@ body::before {
   background: var(--color-darkblue);
   background-image: linear-gradient(
       115deg,
-      rgba(58, 58, 158, 0.8),
-      rgba(136, 136, 206, 0.7)
+      rgba(64, 64, 87, 0.8),
+      rgba(64, 64, 87, 0.8)
     ),
+    url(./img/transparent_logo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+img {
+  max-width: 30%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  padding: 5px;
+  margin: 1;
+}
+
+#img-caption {
+  font-size: 1.5rem;
+  margin: 1px 0 1px 0;
+  text-align: center;
+}
+
 h1 {
-  font-weight: 400;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 0.5;
+  font-size: 2.5rem;
 }
 
 p {
@@ -102,6 +122,7 @@ button {
 
 .description {
   font-weight: 100;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .clue {
@@ -149,7 +170,7 @@ form {
 .form-control:focus {
   border-color: #80bdff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .input-radio,
@@ -178,9 +199,9 @@ form {
 }
 
 footer {
-    font-size: 0.7rem;
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    text-align: right;
-    color: var(--color-white);
-  }
+  font-size: 0.7rem;
+  max-width: 720px;
+  margin: 0px auto 0px auto;
+  text-align: right;
+  color: rgb(43, 40, 40);
+}
